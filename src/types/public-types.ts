@@ -113,18 +113,18 @@ export interface StylingOption {
   arrowColor?: string;
   arrowIndent?: number;
   todayColor?: string;
-  TooltipContent?: React.FC<{
+  TooltipContent?: React.ComponentType<{
     task: Task;
     fontSize: string;
     fontFamily: string;
   }>;
-  TaskListHeader?: React.FC<{
+  TaskListHeader?: React.ComponentType<{
     headerHeight: number;
     rowWidth: string;
     fontFamily: string;
     fontSize: string;
   }>;
-  TaskListTable?: React.FC<{
+  TaskListTable?: React.ComponentType<{
     rowHeight: number;
     rowWidth: string;
     fontFamily: string;

@@ -12,18 +12,18 @@ export type TaskListProps = {
   scrollY: number;
   locale: string;
   tasks: Task[];
-  taskListRef: React.RefObject<HTMLDivElement>;
+  taskListRef: React.RefObject<HTMLDivElement | null>;
   horizontalContainerClass?: string;
   selectedTask: BarTask | undefined;
   setSelectedTask: (task: string) => void;
   onExpanderClick: (task: Task) => void;
-  TaskListHeader: React.FC<{
+  TaskListHeader: React.ComponentType<{
     headerHeight: number;
     rowWidth: string;
     fontFamily: string;
     fontSize: string;
   }>;
-  TaskListTable: React.FC<{
+  TaskListTable: React.ComponentType<{
     rowHeight: number;
     rowWidth: string;
     fontFamily: string;
